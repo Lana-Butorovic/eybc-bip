@@ -9,6 +9,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import Link from "next/link";
+import NavBar from "components/NavBar";
 import ProposalForm from "components/proposalForm";
 
 const Page: NextPage = () => {
@@ -18,6 +19,7 @@ const Page: NextPage = () => {
   return (
     <Layout>
       <VStack spacing="6" align="stretch">
+      <NavBar/>
         <Breadcrumb>
           <BreadcrumbItem>
             <Link href="/" passHref>

@@ -13,6 +13,8 @@ import {
   Text,
   StackDivider,
 } from "@chakra-ui/react";
+import NavBar from "components/NavBar";
+import Item from "components/Item";
 import { FiPlus } from "react-icons/fi";
 import Link from "next/link";
 import { useProposals } from "lib/useProposals";
@@ -33,6 +35,7 @@ const Page: NextPage = () => {
 
   return (
     <Layout>
+      <NavBar/>
       <VStack align="stretch" spacing={5}>
         <Flex>
           <ButtonGroup isAttached>
